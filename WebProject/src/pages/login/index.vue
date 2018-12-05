@@ -33,33 +33,33 @@
       tologin () {
         console.log("login_name:" + this.login_name);
         console.log("login_pwd:" + this.login_pwd);
-
-        this.$http.get(this.login_url,"asdfas", {
-          before: function() {
-            console.log("before:");
-          }
-        })
-          .then(function(response) {
-            console.log("then:");
-
-            let data_return = response.body;
-            if (data_return.respcd == '0000') {
-              alert("登录成功");
-
-              this.jumptomainpage();
-            }else {
-              alert("登录失败");
-            }
-
-
-
-          }, function(response) {
-            console.log("function:");
-          })
-          .catch(function(response) {
-            console.log("catch:");
-          });
-
+        this.jumptomainpage();
+        // this.$http.get(this.login_url,"asdfas", {
+        //   before: function() {
+        //     console.log("before:");
+        //   }
+        // })
+        //   .then(function(response) {
+        //     console.log("then:");
+        //
+        //     let data_return = response.body;
+        //     if (data_return.respcd == '0000') {
+        //       alert("登录成功");
+        //
+        //       this.jumptomainpage();
+        //     }else {
+        //       alert("登录失败");
+        //     }
+        //
+        //
+        //
+        //   }, function(response) {
+        //     console.log("function:");
+        //   })
+        //   .catch(function(response) {
+        //     console.log("catch:");
+        //   });
+        //
 
 
 
