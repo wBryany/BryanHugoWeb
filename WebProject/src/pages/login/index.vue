@@ -17,6 +17,7 @@
 </template>
 
 <script>
+  import bridge from '../../jsbridge/bridge-v2'
   export default {
     name: "index",
     data() {

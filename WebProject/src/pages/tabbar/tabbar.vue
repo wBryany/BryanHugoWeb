@@ -42,13 +42,22 @@
          // alert(pagename);
 
           if(pagename==this.main_page){
-
+            this.$router.replace({
+              path: '/mainpage'
+            });
           }else if(pagename==this.ls_page){
+            this.$router.replace({
+              path: '/liushui'
+            });
 
           }else if(pagename==this.zd_page){
-
+            this.$router.replace({
+              path: '/zhangdan'
+            });
           }else if(pagename==this.mine_page){
-
+            this.$router.replace({
+              path: '/mine'
+            });
           }
         }
       }
